@@ -20,8 +20,9 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
-| [What is JVM](01-jvm/what-is-jvm.md) | 🔰 | 📝 待補 |
+| [What is JVM](01-jvm/what-is-jvm.md) | 🔰 | ✅ |
 | [記憶體：Stack 與 Heap](01-jvm/memory-stack-and-heap.md) | 🔰 | 🔧 |
+| [ClassLoader 的開放性：從 Tomcat 隔離到 Native Image 的死穴](01-jvm/deep-classloader.md) | 🔬 | ✅ |
 
 ### 02 - Java 語言核心
 
@@ -47,10 +48,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
 
 ### 近期
-
-**還債**
-
-- 🔰 完成 [What is JVM](01-jvm/what-is-jvm.md)
 
 **04 - 集合框架**（`04-collections/`）
 
@@ -99,7 +96,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **01 - JVM 補深**
 
-- 🔰 Class Loading 與雙親委派
 - 🔰 GC 基礎與分代回收
 - 🔬 GC 演算法比較（G1、ZGC）
 - 🔬 診斷工具實戰（jstack / jmap / JFR）
