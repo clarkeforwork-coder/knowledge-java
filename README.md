@@ -21,7 +21,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
 | [What is JVM](01-jvm/what-is-jvm.md) | 🔰 | ✅ |
-| [記憶體：Stack 與 Heap](01-jvm/memory-stack-and-heap.md) | 🔰 | 🔧 |
+| [記憶體：Stack 與 Heap](01-jvm/memory-stack-and-heap.md) | 🔰 | ✅ |
 | [ClassLoader 的開放性：從 Tomcat 隔離到 Native Image 的死穴](01-jvm/deep-classloader.md) | 🔬 | ✅ |
 
 ### 02 - Java 語言核心
