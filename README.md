@@ -21,26 +21,26 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
 | [What is JVM](01-jvm/what-is-jvm.md) | 🔰 | 📝 待補 |
-| [記憶體：Stack 與 Heap](01-jvm/memory-stack-and-heap.md) | 🔰 | ✅ |
+| [記憶體：Stack 與 Heap](01-jvm/memory-stack-and-heap.md) | 🔰 | 🔧 |
 
 ### 02 - Java 語言核心
 
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
-| [資料型態：基本型別 vs 參考型別](02-language-core/data-types.md) | 🔰 | ✅ |
-| [Autoboxing 與 Unboxing](02-language-core/autoboxing-unboxing.md) | 🔰 | ✅ |
-| [經典陷阱：迴圈裡共用同一個物件](02-language-core/pitfall-shared-reference-in-loop.md) | 🔰 | ✅ |
-| [浮點數與 BigDecimal](02-language-core/floating-point-and-bigdecimal.md) | 🔰 | ✅ |
-| [String 與 StringBuilder](02-language-core/string-and-stringbuilder.md) | 🔰 | ✅ |
-| [例外處理](02-language-core/exception-handling.md) | 🔰 | ✅ |
+| [資料型態：基本型別 vs 參考型別](02-language-core/data-types.md) | 🔰 | 🔧 |
+| [Autoboxing 與 Unboxing](02-language-core/autoboxing-unboxing.md) | 🔰 | 🔧 |
+| [經典陷阱：迴圈裡共用同一個物件](02-language-core/pitfall-shared-reference-in-loop.md) | 🔰 | 🔧 |
+| [浮點數與 BigDecimal](02-language-core/floating-point-and-bigdecimal.md) | 🔰 | 🔧 |
+| [String 與 StringBuilder](02-language-core/string-and-stringbuilder.md) | 🔰 | 🔧 |
+| [例外處理](02-language-core/exception-handling.md) | 🔰 | 🔧 |
 
 ### 03 - Spring 到 Spring Boot
 
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
-| [Spring 的演進：XML → Annotation → Boot](03-spring-to-spring-boot/spring-evolution.md) | 🔰 | ✅ |
-| [Spring Boot 自動配置](03-spring-to-spring-boot/spring-boot-autoconfiguration.md) | 🔰 | ✅ |
-| [用 Annotation 設定 AOP](03-spring-to-spring-boot/aop-with-annotations.md) | 🔰 | ✅ |
+| [Spring 的演進：XML → Annotation → Boot](03-spring-to-spring-boot/spring-evolution.md) | 🔰 | 🔧 |
+| [Spring Boot 自動配置](03-spring-to-spring-boot/spring-boot-autoconfiguration.md) | 🔰 | 🔧 |
+| [用 Annotation 設定 AOP](03-spring-to-spring-boot/aop-with-annotations.md) | 🔰 | 🔧 |
 
 ## Roadmap
 
@@ -132,7 +132,10 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 ## 慣例
 
-- 每篇筆記一個主題，包含：概念說明、可執行的程式碼範例、重點整理
+- 每篇筆記一個主題，結構依 [TEMPLATE.md](TEMPLATE.md)：
+  - 🔰 基礎：情境開場 → 概念段落（先程式碼後解釋）→ 重點 → 常見面試題 → 延伸閱讀
+  - 🔬 深入：問題起點 → 追蹤過程 → 結論 → 回到實務
 - 深度：🔰 基礎（訓練主軌）/ 🔬 深入（選修軌，檔名 `deep-` 開頭）
 - 🔰 筆記結尾以「🔬 想深入：[標題](deep-xxx.md)」連到對應的深入筆記
-- 狀態：✅ 完成 / 🚧 進行中 / 📝 待補
+- 可執行範例採混合制：預設文內 snippet；「不跑看不出結果」的主題才在該章 `examples/` 附單檔 .java（JDK 11+ 單檔執行）
+- 狀態：✅ 完成（符合模板）/ 🔧 待翻新（內容完成，尚未符合 [TEMPLATE.md](TEMPLATE.md)）/ 🚧 進行中 / 📝 待補
