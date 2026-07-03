@@ -22,6 +22,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 |---|---|---|
 | [What is JVM](01-jvm/what-is-jvm.md) | 🔰 | ✅ |
 | [記憶體：Stack 與 Heap](01-jvm/memory-stack-and-heap.md) | 🔰 | ✅ |
+| [GC 基礎與分代回收](01-jvm/gc-basics-and-generations.md) | 🔰 | ✅ |
 | [ClassLoader 的開放性：從 Tomcat 隔離到 Native Image 的死穴](01-jvm/deep-classloader.md) | 🔬 | ✅ |
 
 ### 02 - Java 語言核心
@@ -51,7 +52,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **01 - JVM 基礎補完**
 
-- 🔰 GC 基礎與分代回收（含 Heap 容量估算）——既有兩篇筆記的鉤子都指向它
 - 🔰 事故排查工具箱：jps、jstack、jmap 與 heap dump（配 `examples/` 可執行活靶）
 
 **04 - 集合框架**（`04-collections/`）
