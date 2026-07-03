@@ -49,6 +49,11 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 ### 近期
 
+**01 - JVM 基礎補完**
+
+- 🔰 GC 基礎與分代回收（含 Heap 容量估算）——既有兩篇筆記的鉤子都指向它
+- 🔰 事故排查工具箱：jps、jstack、jmap 與 heap dump（配 `examples/` 可執行活靶）
+
 **04 - 集合框架**（`04-collections/`）
 
 - 🔰 List：ArrayList vs LinkedList
@@ -96,9 +101,8 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **01 - JVM 補深**
 
-- 🔰 GC 基礎與分代回收
 - 🔬 GC 演算法比較（G1、ZGC）
-- 🔬 診斷工具實戰（jstack / jmap / JFR）
+- 🔬 進階剖析：JFR 與 profiler（承接 🔰 排查工具箱）
 
 **02 - 語言核心補完**
 
