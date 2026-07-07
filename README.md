@@ -58,6 +58,12 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [fail-fast 與 ConcurrentModificationException](04-collections/fail-fast-and-cme.md) | 🔰 | ✅ |
 | [HashMap 內部原理：hash 擾動、擴容與樹化](04-collections/deep-hashmap-internals.md) | 🔬 | ✅ |
 
+### 06 - Lambda 與 Stream
+
+| 筆記 | 深度 | 狀態 |
+|---|---|---|
+| [Functional Interface 與 Lambda](06-lambda-and-stream/functional-interface-and-lambda.md) | 🔰 | ✅ |
+
 ## Roadmap
 
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
@@ -66,7 +72,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **06 - Lambda 與 Stream**（`06-lambda-and-stream/`）
 
-- 🔰 Functional Interface 與 Lambda
 - 🔰 Stream：中間操作與終端操作
 - 🔰 Collectors 實戰
 - 🔰 Stream 常見誤用（副作用、重複消費）
