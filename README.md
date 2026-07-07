@@ -45,6 +45,12 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [Spring Boot 自動配置](03-spring-to-spring-boot/spring-boot-autoconfiguration.md) | 🔰 | 🔧 |
 | [用 Annotation 設定 AOP](03-spring-to-spring-boot/aop-with-annotations.md) | 🔰 | 🔧 |
 
+### 04 - 集合框架
+
+| 筆記 | 深度 | 狀態 |
+|---|---|---|
+| [集合框架總覽：Collection 與 Map 兩棵樹、選型決策](04-collections/collections-overview.md) | 🔰 | ✅ |
+
 ## Roadmap
 
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
@@ -54,6 +60,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 **04 - 集合框架**（`04-collections/`）
 
 - 🔰 List：ArrayList vs LinkedList
+- 🔰 Set：HashSet、LinkedHashSet、TreeSet 與去重的代價
 - 🔰 Map：HashMap 基礎與正確使用
 - 🔰 equals 與 hashCode 契約
 - 🔰 排序：Comparable vs Comparator
