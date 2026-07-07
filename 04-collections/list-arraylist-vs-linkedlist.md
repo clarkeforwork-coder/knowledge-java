@@ -98,7 +98,7 @@ head ⇄ [prev|item|next] ⇄ [prev|item|next] ⇄ ... ⇄ tail
 - LinkedList 唯一勝場是頭部插入（實測 2ms vs 284ms），但該場景 `ArrayDeque` 更好
 - 遍歷 LinkedList 永遠用 for-each，`for (int i...) get(i)` 是 O(n²)
 
-List 管「第幾個」，下一站是管「有沒有」的家族——HashSet、LinkedHashSet、TreeSet 怎麼選、去重的代價是什麼，見規劃中的〈Set：HashSet、LinkedHashSet、TreeSet 與去重的代價〉。
+List 管「第幾個」，下一站是管「有沒有」的家族——HashSet、LinkedHashSet、TreeSet 怎麼選、去重的代價是什麼，見 [Set：HashSet、LinkedHashSet、TreeSet 與去重的代價](set-implementations.md)。
 
 ## 常見面試題
 
