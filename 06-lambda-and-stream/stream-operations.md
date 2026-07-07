@@ -137,7 +137,7 @@ List<String> result = orders.stream()
 - 一條 Stream **只能消費一次**，重跑就從來源再開；想存 Stream 通常是誤把它當容器
 - 算數字換 `IntStream`（`mapToInt`）——免裝箱還送統計終端操作
 
-管線的終點站「收集」值得專篇：`toList` 只是入門，分組、分區、下游聚合才是 `Collectors` 的真本事——[Map 篇](../04-collections/map-hashmap-basics.md)手工寫的 `merge` 計數、`computeIfAbsent` 分組，都有一行版。見規劃中的〈Collectors 實戰〉。
+管線的終點站「收集」值得專篇：`toList` 只是入門，分組、分區、下游聚合才是 `Collectors` 的真本事——[Map 篇](../04-collections/map-hashmap-basics.md)手工寫的 `merge` 計數、`computeIfAbsent` 分組，都有一行版。見 [Collectors 實戰](collectors-in-action.md)。
 
 ## 常見面試題
 
