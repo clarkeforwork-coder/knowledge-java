@@ -115,7 +115,7 @@ new HashMap<>(17) 後 table：null（還沒配置）
 - **樹化門檻 8**：Poisson 算出正常情況機率 6×10⁻⁸——到 8 就是異常；且容量 < 64 寧可擴容（實驗三：11 個元素被逼到容量 64 才樹化），退樹門檻 6 防抖動
 - 實務三帶走：預給容量依然值得、hashCode 品質是你的責任（擾動救不了零差異）、線上見到 TreeNode 是警報不是保險
 
-下一個自然的疑問是：這一切在多執行緒下會發生什麼？（劇透：JDK 7 的 HashMap 併發擴容能把鏈搬成環，`get` 直接死循環——JDK 8 改了搬法但依然不安全。）`ConcurrentHashMap` 怎麼解，07 並發章見。
+下一個自然的疑問是：這一切在多執行緒下會發生什麼？（劇透：JDK 7 的 HashMap 併發擴容能把鏈搬成環，`get` 直接死循環——JDK 8 改了搬法但依然不安全。）`ConcurrentHashMap` 怎麼解，見 [並發集合：ConcurrentHashMap](../07-concurrency/concurrent-collections.md)。
 
 ## 常見面試題
 

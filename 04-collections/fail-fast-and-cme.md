@@ -99,7 +99,7 @@ while (it.hasNext()) {
 
 ### 對照組：weakly consistent（07 章預告）
 
-並發容器（`ConcurrentHashMap`、`CopyOnWriteArrayList`）的 iterator 走另一條路：**不對帳、不炸**，容忍遍歷期間的修改，代價是你看到的可能是「稍舊的快照」。fail-fast 要正確性寧可死，weakly consistent 要可用性容忍舊——沒有誰對，是場景不同，細節留給 07 並發章。
+並發容器（`ConcurrentHashMap`、`CopyOnWriteArrayList`）的 iterator 走另一條路：**不對帳、不炸**，容忍遍歷期間的修改，代價是你看到的可能是「稍舊的快照」。fail-fast 要正確性寧可死，weakly consistent 要可用性容忍舊——沒有誰對，是場景不同，細節見 [並發集合：ConcurrentHashMap](../07-concurrency/concurrent-collections.md)。
 
 ## 小結
 

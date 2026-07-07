@@ -133,7 +133,7 @@ for (int i = 0; i < 100_000; i++) fixed.submit(() -> { });   // 十萬個任務
 - 參數起點：CPU-bound 開核心數、IO-bound 按等待占比放大，**壓測收尾**
 - 別忘 shutdown（JVM 不退出）、`submit` 的例外在 Future 裡（沒 get 就沒人知道）
 
-池解決了「thread 怎麼供給」，下一個問題是「多條 thread 共享的資料怎麼辦」——[synchronized 篇](synchronized-and-volatile.md)的鎖太粗，集合有專門的並發版本：見規劃中的〈並發集合：ConcurrentHashMap〉。
+池解決了「thread 怎麼供給」，下一個問題是「多條 thread 共享的資料怎麼辦」——[synchronized 篇](synchronized-and-volatile.md)的鎖太粗，集合有專門的並發版本：見 [並發集合：ConcurrentHashMap](concurrent-collections.md)。
 
 ## 常見面試題
 
