@@ -63,6 +63,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
 | [Functional Interface 與 Lambda](06-lambda-and-stream/functional-interface-and-lambda.md) | 🔰 | ✅ |
+| [Stream：中間操作與終端操作](06-lambda-and-stream/stream-operations.md) | 🔰 | ✅ |
 
 ## Roadmap
 
@@ -72,7 +73,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **06 - Lambda 與 Stream**（`06-lambda-and-stream/`）
 
-- 🔰 Stream：中間操作與終端操作
 - 🔰 Collectors 實戰
 - 🔰 Stream 常見誤用（副作用、重複消費）
 

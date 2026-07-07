@@ -132,7 +132,7 @@ error: local variables referenced from a lambda expression must be final or effe
 - **Lambda ≠ 匿名內部類**：`this` 借用外層、不產生 class 檔（invokedynamic）——兩個都有實測證據
 - **effectively final 的本質**：捕獲的是值的拷貝（stack 變數活不過方法），想累加就換成「回傳值」的形式
 
-行為可以當參數傳之後，整條資料處理管線就能組裝起來了——`filter` 收 Predicate、`map` 收 Function、`forEach` 收 Consumer，這就是下一篇的 Stream：見規劃中的〈Stream：中間操作與終端操作〉。
+行為可以當參數傳之後，整條資料處理管線就能組裝起來了——`filter` 收 Predicate、`map` 收 Function、`forEach` 收 Consumer，這就是下一篇的 Stream：見 [Stream：中間操作與終端操作](stream-operations.md)。
 
 ## 常見面試題
 
