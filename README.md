@@ -56,16 +56,13 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [equals 與 hashCode 契約](04-collections/equals-hashcode-contract.md) | 🔰 | ✅ |
 | [排序：Comparable vs Comparator](04-collections/sorting-comparable-comparator.md) | 🔰 | ✅ |
 | [fail-fast 與 ConcurrentModificationException](04-collections/fail-fast-and-cme.md) | 🔰 | ✅ |
+| [HashMap 內部原理：hash 擾動、擴容與樹化](04-collections/deep-hashmap-internals.md) | 🔬 | ✅ |
 
 ## Roadmap
 
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
 
 ### 近期
-
-**04 - 集合框架**（`04-collections/`）
-
-- 🔬 HashMap 內部原理（hash 擾動、擴容、樹化）
 
 **06 - Lambda 與 Stream**（`06-lambda-and-stream/`）
 

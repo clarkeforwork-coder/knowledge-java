@@ -109,7 +109,7 @@ while (it.hasNext()) {
 - 正確姿勢按序：`removeIf` → `iterator.remove()` → 先收集再批次 → Stream filter 產新集合
 - fail-fast 是 best-effort 的除錯輔助，不是執行緒安全機制——真並發用並發容器
 
-到這裡，04 章的 🔰 軌完整了：從[總覽的地圖](collections-overview.md)出發，List、Set、Map 各就各位，equals/hashCode 和排序兩大契約補完，最後以遍歷修改的安全守則收尾。選修軌還留著一篇 🔬〈HashMap 內部原理〉給想鑽桶子裡看的人；而「真正的」並發修改問題——多執行緒下的集合——07 並發章見。
+到這裡，04 章的 🔰 軌完整了：從[總覽的地圖](collections-overview.md)出發，List、Set、Map 各就各位，equals/hashCode 和排序兩大契約補完，最後以遍歷修改的安全守則收尾。選修軌還有一篇 🔬 [HashMap 內部原理](deep-hashmap-internals.md) 給想鑽桶子裡看的人；而「真正的」並發修改問題——多執行緒下的集合——07 並發章見。
 
 ## 常見面試題
 
