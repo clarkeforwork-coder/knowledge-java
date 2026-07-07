@@ -67,6 +67,12 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [Collectors 實戰](06-lambda-and-stream/collectors-in-action.md) | 🔰 | ✅ |
 | [Stream 常見誤用](06-lambda-and-stream/stream-pitfalls.md) | 🔰 | ✅ |
 
+### 07 - 並發
+
+| 筆記 | 深度 | 狀態 |
+|---|---|---|
+| [Thread 基礎與生命週期](07-concurrency/thread-basics-and-lifecycle.md) | 🔰 | ✅ |
+
 ## Roadmap
 
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
@@ -83,7 +89,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **07 - 並發**（`07-concurrency/`）
 
-- 🔰 Thread 基礎與生命週期
 - 🔰 synchronized 與 volatile
 - 🔰 ExecutorService 與執行緒池參數
 - 🔰 並發集合：ConcurrentHashMap
