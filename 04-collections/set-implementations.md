@@ -102,7 +102,7 @@ BigDecimal → TreeSet：size = 1
 - 選型：去重用 `HashSet`；去重＋保插入序用 `LinkedHashSet`；去重＋隨時排序用 `TreeSet`（付 O(log n)）
 - 可變物件改了欄位就變 hash 容器裡的幽靈——參與判定的欄位保持不可變
 
-兩條線接下去：hash 分桶的完整機制（容量、負載因子、碰撞了怎麼辦），見 [Map：HashMap 基礎與正確使用](map-hashmap-basics.md)；`equals`/`hashCode` 到底該怎麼寫才算對，見 [equals 與 hashCode 契約](equals-hashcode-contract.md)；TreeSet 的比較邏輯怎麼客製（含中文排序的 `Collator`），見規劃中的〈排序：Comparable vs Comparator〉。
+兩條線接下去：hash 分桶的完整機制（容量、負載因子、碰撞了怎麼辦），見 [Map：HashMap 基礎與正確使用](map-hashmap-basics.md)；`equals`/`hashCode` 到底該怎麼寫才算對，見 [equals 與 hashCode 契約](equals-hashcode-contract.md)；TreeSet 的比較邏輯怎麼客製（含中文排序的 `Collator`），見 [排序：Comparable vs Comparator](sorting-comparable-comparator.md)。
 
 ## 常見面試題
 

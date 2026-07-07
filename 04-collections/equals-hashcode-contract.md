@@ -132,7 +132,7 @@ cp.equals(p)：false   ← ColorPoint 眼中：你連顏色都沒有
 - 首選 record；用 IDE/Lombok 生成的，加欄位時記得重生成
 - JPA Entity 是特例，別套值物件寫法（詳見未來 08 章）
 
-契約的世界還有一位鄰居：`compareTo`。它跟 equals 的一致性沒有強制契約，只有「強烈建議」——[Set 篇](set-implementations.md) 的 BigDecimal 就是不一致的著名案例。排序的完整規則，見規劃中的〈排序：Comparable vs Comparator〉。
+契約的世界還有一位鄰居：`compareTo`。它跟 equals 的一致性沒有強制契約，只有「強烈建議」——[Set 篇](set-implementations.md) 的 BigDecimal 就是不一致的著名案例。排序的完整規則，見 [排序：Comparable vs Comparator](sorting-comparable-comparator.md)。
 
 ## 常見面試題
 
