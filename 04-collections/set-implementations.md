@@ -29,7 +29,7 @@
 1. 先算元素的 **`hashCode()`**，直接跳到對應的桶（bucket）——這就是 O(1) 的來源
 2. 桶裡若已有元素，再用 **`equals()`** 逐一確認是不是同一個
 
-所以判定標準是 `hashCode()` ＋ `equals()` **兩個一起**：hashCode 不同連桶都不同，equals 根本沒機會出場。這也是為什麼這兩個方法必須成對正確實作——規則細節見規劃中的〈equals 與 hashCode 契約〉，而 hash 表本身怎麼運作，見規劃中的〈Map：HashMap 基礎與正確使用〉。
+所以判定標準是 `hashCode()` ＋ `equals()` **兩個一起**：hashCode 不同連桶都不同，equals 根本沒機會出場。這也是為什麼這兩個方法必須成對正確實作——規則細節見規劃中的〈equals 與 hashCode 契約〉，而 hash 表本身怎麼運作，見 [Map：HashMap 基礎與正確使用](map-hashmap-basics.md)。
 
 ### Tree 家族的判重：compareTo 說了算，equals 沒有戲份
 
@@ -102,7 +102,7 @@ BigDecimal → TreeSet：size = 1
 - 選型：去重用 `HashSet`；去重＋保插入序用 `LinkedHashSet`；去重＋隨時排序用 `TreeSet`（付 O(log n)）
 - 可變物件改了欄位就變 hash 容器裡的幽靈——參與判定的欄位保持不可變
 
-兩條線接下去：hash 分桶的完整機制（容量、負載因子、碰撞了怎麼辦），見規劃中的〈Map：HashMap 基礎與正確使用〉；`equals`/`hashCode` 到底該怎麼寫才算對，見規劃中的〈equals 與 hashCode 契約〉；TreeSet 的比較邏輯怎麼客製（含中文排序的 `Collator`），見規劃中的〈排序：Comparable vs Comparator〉。
+兩條線接下去：hash 分桶的完整機制（容量、負載因子、碰撞了怎麼辦），見 [Map：HashMap 基礎與正確使用](map-hashmap-basics.md)；`equals`/`hashCode` 到底該怎麼寫才算對，見規劃中的〈equals 與 hashCode 契約〉；TreeSet 的比較邏輯怎麼客製（含中文排序的 `Collator`），見規劃中的〈排序：Comparable vs Comparator〉。
 
 ## 常見面試題
 

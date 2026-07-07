@@ -52,6 +52,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [集合框架總覽：Collection 與 Map 兩棵樹、選型決策](04-collections/collections-overview.md) | 🔰 | ✅ |
 | [List：ArrayList vs LinkedList](04-collections/list-arraylist-vs-linkedlist.md) | 🔰 | ✅ |
 | [Set：HashSet、LinkedHashSet、TreeSet 與去重的代價](04-collections/set-implementations.md) | 🔰 | ✅ |
+| [Map：HashMap 基礎與正確使用](04-collections/map-hashmap-basics.md) | 🔰 | ✅ |
 
 ## Roadmap
 
@@ -61,7 +62,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **04 - 集合框架**（`04-collections/`）
 
-- 🔰 Map：HashMap 基礎與正確使用
 - 🔰 equals 與 hashCode 契約
 - 🔰 排序：Comparable vs Comparator
 - 🔰 fail-fast 與 ConcurrentModificationException
