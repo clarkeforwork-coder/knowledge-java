@@ -145,7 +145,7 @@ Runnable add = () -> { for (int i = 0; i < 500_000; i++) counter++; };
 - `counter++` 是三步操作——兩條 thread 各加 50 萬實測剩 508,028，race condition 沒有例外、沒有規律
 - thread 每條約 1MB stack、建立切換都貴——執行緒池與 Virtual Threads 的伏筆
 
-災難已經親眼看過，接下來是武器：`synchronized` 怎麼把三步變一步、`volatile` 管的是另一件事（可見性）——見規劃中的〈synchronized 與 volatile〉。
+災難已經親眼看過，接下來是武器：`synchronized` 怎麼把三步變一步、`volatile` 管的是另一件事（可見性）——見 [synchronized 與 volatile](synchronized-and-volatile.md)。
 
 ## 常見面試題
 
