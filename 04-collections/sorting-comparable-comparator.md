@@ -137,7 +137,7 @@ Unicode 序把「嘉義」排在「新竹」前面，對使用者來說毫無道
 - **給人看的中文排序用 `Collator`**（筆畫序），Unicode 碼位序只是機器覺得整齊
 - TreeSet/TreeMap 的 Comparator 同時是判重標準——compare 為 0 就進不去
 
-04 章的 🔰 軌只剩最後一塊拼圖：一邊遍歷一邊刪，`ConcurrentModificationException` 為什麼炸、正確姿勢是什麼——見規劃中的〈fail-fast 與 ConcurrentModificationException〉。
+04 章的 🔰 軌只剩最後一塊拼圖：一邊遍歷一邊刪，`ConcurrentModificationException` 為什麼炸、正確姿勢是什麼——見 [fail-fast 與 ConcurrentModificationException](fail-fast-and-cme.md)。
 
 ## 常見面試題
 

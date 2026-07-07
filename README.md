@@ -55,6 +55,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [Map：HashMap 基礎與正確使用](04-collections/map-hashmap-basics.md) | 🔰 | ✅ |
 | [equals 與 hashCode 契約](04-collections/equals-hashcode-contract.md) | 🔰 | ✅ |
 | [排序：Comparable vs Comparator](04-collections/sorting-comparable-comparator.md) | 🔰 | ✅ |
+| [fail-fast 與 ConcurrentModificationException](04-collections/fail-fast-and-cme.md) | 🔰 | ✅ |
 
 ## Roadmap
 
@@ -64,7 +65,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **04 - 集合框架**（`04-collections/`）
 
-- 🔰 fail-fast 與 ConcurrentModificationException
 - 🔬 HashMap 內部原理（hash 擾動、擴容、樹化）
 
 **06 - Lambda 與 Stream**（`06-lambda-and-stream/`）
