@@ -111,7 +111,7 @@ main 明明改了，那條 thread 卻永遠讀到舊值——JIT 把迴圈裡的
 - 單變數原子更新用 **Atomic**（CAS 無鎖，實測比 synchronized 快 4 倍）；複合邏輯回到 synchronized
 - 508,028 懸案破案：synchronized 與 Atomic 都給出 1,000,000
 
-「進出鎖等於同步記憶體」「volatile 寫直達主記憶體」這些白話背後有一套精確的規則——happens-before。想知道 JVM 到底承諾了什麼、重排序的邊界在哪，見規劃中的 🔬〈Java Memory Model 與 happens-before〉。而下一個實務問題是：thread 這麼貴（上一篇算過帳），任務又這麼多——見規劃中的〈ExecutorService 與執行緒池參數〉。
+「進出鎖等於同步記憶體」「volatile 寫直達主記憶體」這些白話背後有一套精確的規則——happens-before。想知道 JVM 到底承諾了什麼、重排序的邊界在哪，見規劃中的 🔬〈Java Memory Model 與 happens-before〉。而下一個實務問題是：thread 這麼貴（上一篇算過帳），任務又這麼多——見 [ExecutorService 與執行緒池參數](executorservice-and-thread-pools.md)。
 
 ## 常見面試題
 

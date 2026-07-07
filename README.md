@@ -73,6 +73,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 |---|---|---|
 | [Thread 基礎與生命週期](07-concurrency/thread-basics-and-lifecycle.md) | 🔰 | ✅ |
 | [synchronized 與 volatile](07-concurrency/synchronized-and-volatile.md) | 🔰 | ✅ |
+| [ExecutorService 與執行緒池參數](07-concurrency/executorservice-and-thread-pools.md) | 🔰 | ✅ |
 
 ## Roadmap
 
@@ -90,7 +91,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **07 - 並發**（`07-concurrency/`）
 
-- 🔰 ExecutorService 與執行緒池參數
 - 🔰 並發集合：ConcurrentHashMap
 - 🔰 CompletableFuture
 - 🔰 Virtual Threads（Java 21）
