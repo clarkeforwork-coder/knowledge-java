@@ -130,7 +130,7 @@ Java 16 的 `Stream.toList()` 回傳**不可變 List**，而 `collect(Collectors
 - `Stream.toList()` **不可變**（實測 add 就炸）；要可變明寫 `toCollection(ArrayList::new)`
 - Map 篇的 `merge`／`computeIfAbsent` 手工版沒有白學——那是 Collectors 收走的細節本身
 
-06 章 🔰 軌還剩最後一篇：工具都會用了，接下來是**別把它用壞**——在 `map` 裡做副作用、重複消費、`parallel()` 亂開、Optional 誤用，見規劃中的〈Stream 常見誤用〉。
+06 章 🔰 軌還剩最後一篇：工具都會用了，接下來是**別把它用壞**——在 `map` 裡做副作用、重複消費、`parallel()` 亂開，見 [Stream 常見誤用](stream-pitfalls.md)。
 
 ## 常見面試題
 
