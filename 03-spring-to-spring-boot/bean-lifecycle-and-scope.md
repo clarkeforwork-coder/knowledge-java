@@ -133,7 +133,7 @@ Provider ：兩次拿到同一個？false   ← 每次 getObject() 都是新的
 - **singleton 注入 prototype 只注入一次**（實測 true/false 對照）——要「每次都新」用 `ObjectProvider`
 - AOP proxy 誕生於 BeanPostProcessor——這句話是下一篇的鑰匙
 
-proxy 在流水線裡偷偷替換了你的 bean——那麼「自己呼叫自己的方法」會經過 proxy 嗎？`@Transactional` 最著名的失效情境就藏在這個問題裡：見規劃中的〈@Transactional：傳播行為與常見失效情境〉。
+proxy 在流水線裡偷偷替換了你的 bean——那麼「自己呼叫自己的方法」會經過 proxy 嗎？`@Transactional` 最著名的失效情境就藏在這個問題裡：見 [@Transactional：傳播行為與常見失效情境](transactional-propagation-and-pitfalls.md)。
 
 ## 常見面試題
 

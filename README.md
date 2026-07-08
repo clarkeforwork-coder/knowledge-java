@@ -45,6 +45,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [Spring Boot 自動配置](03-spring-to-spring-boot/spring-boot-autoconfiguration.md) | 🔰 | 🔧 |
 | [用 Annotation 設定 AOP](03-spring-to-spring-boot/aop-with-annotations.md) | 🔰 | 🔧 |
 | [Bean 生命週期與 Scope](03-spring-to-spring-boot/bean-lifecycle-and-scope.md) | 🔰 | ✅ |
+| [@Transactional：傳播行為與常見失效情境](03-spring-to-spring-boot/transactional-propagation-and-pitfalls.md) | 🔰 | ✅ |
 
 ### 04 - 集合框架
 
@@ -100,7 +101,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **03 - Spring 補深**
 
-- 🔰 @Transactional：傳播行為與常見失效情境
 - 🔰 Spring MVC 請求處理流程
 - 🔰 統一例外處理與 Validation
 - 🔬 從 AOP proxy 看 @Transactional self-invocation 失效
