@@ -78,17 +78,20 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [CompletableFuture](07-concurrency/completablefuture.md) | 🔰 | ✅ |
 | [Virtual Threads（Java 21）](07-concurrency/virtual-threads.md) | 🔰 | ✅ |
 
+### 05 - 泛型
+
+| 筆記 | 深度 | 狀態 |
+|---|---|---|
+| [泛型基礎與型別擦除](05-generics/generics-basics-and-type-erasure.md) | 🔰 | ✅ |
+
 ## Roadmap
 
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
-
-### 近期
 
 ### 中期
 
 **05 - 泛型**（`05-generics/`）
 
-- 🔰 泛型基礎與型別擦除
 - 🔰 萬用字元與 PECS
 - 🔰 泛型與陣列的地雷
 

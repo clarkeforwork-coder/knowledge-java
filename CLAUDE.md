@@ -29,6 +29,14 @@ Java 技術筆記 repo（教育訓練教材的通用化公開版，也是 portfo
 - 圖片選配：放該章 `attachment/img/`、以內容命名（kebab-case）；
   概念圖優先 ASCII，AI 生圖當封面並檢查圖內亂字。
 
+## 範例驗證
+
+- 筆記裡的程式碼輸出、benchmark 數據**必須實測**，不可憑印象編造；
+  發現實測與預期不符時，修正筆記內容而非數據。
+- 本機 JDK：Temurin 17（`java Xxx.java` 單檔執行）。
+- 需要 JDK 21+ 的範例（如 Virtual Threads）用 Docker 執行：
+  `docker run --rm -v "$PWD":/work -w /work eclipse-temurin:21-jdk java Xxx.java`
+
 ## 可執行範例（混合制）
 
 - 預設文內 snippet，力求「複製進 main 就能跑」。
