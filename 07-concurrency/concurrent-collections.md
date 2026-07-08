@@ -112,7 +112,7 @@ for (Integer k : live.keySet()) {
 - 禁 null 是為了消除併發下的歧義；迭代器 weakly consistent、`size()` 是估計——弱一致是它選的世界觀
 - 速記：共享 Map 用 CHM；讀多寫極少用 CopyOnWrite；生產者消費者用 BlockingQueue
 
-到這裡，「共享資料」的防護配齊了。下一個主題換方向——**任務的編排**：查會員、查訂單、查優惠三個遠端呼叫，怎麼並行發出、聚合結果、優雅處理失敗？見規劃中的〈CompletableFuture〉。
+到這裡，「共享資料」的防護配齊了。下一個主題換方向——**任務的編排**：查會員、查訂單、查優惠三個遠端呼叫，怎麼並行發出、聚合結果、優雅處理失敗？見 [CompletableFuture](completablefuture.md)。
 
 ## 常見面試題
 

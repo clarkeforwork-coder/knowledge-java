@@ -75,6 +75,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [synchronized 與 volatile](07-concurrency/synchronized-and-volatile.md) | 🔰 | ✅ |
 | [ExecutorService 與執行緒池參數](07-concurrency/executorservice-and-thread-pools.md) | 🔰 | ✅ |
 | [並發集合：ConcurrentHashMap](07-concurrency/concurrent-collections.md) | 🔰 | ✅ |
+| [CompletableFuture](07-concurrency/completablefuture.md) | 🔰 | ✅ |
 
 ## Roadmap
 
@@ -92,7 +93,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **07 - 並發**（`07-concurrency/`）
 
-- 🔰 CompletableFuture
 - 🔰 Virtual Threads（Java 21）
 - 🔬 Java Memory Model 與 happens-before
 - 🔬 synchronized 鎖升級
