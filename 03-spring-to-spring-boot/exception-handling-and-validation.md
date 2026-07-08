@@ -131,7 +131,7 @@ HTTP 500：{"handledBy":"controller 內的 handler"}
 - **advice 的邊界是 MVC 管線**：Filter 層（含 Security）的例外接不到
 - 彩蛋級的坑：Spring 6.1 的 `-parameters` 旗標（Boot 3.2 升級災情）
 
-**中期 Roadmap 的 🔰 軌至此全部完工。** 03 章補深還欠一篇 🔬——`@Transactional` 的 self-invocation 為什麼在 proxy 模型下無解，要從原始碼找答案：見規劃中的 🔬〈從 AOP proxy 看 @Transactional self-invocation 失效〉。
+**中期 Roadmap 的 🔰 軌至此全部完工。** 03 章補深還欠一篇 🔬——`@Transactional` 的 self-invocation 為什麼在 proxy 模型下無解，要從原始碼找答案：見 🔬 [從 AOP proxy 看 @Transactional self-invocation 失效](deep-transactional-self-invocation.md)。
 
 ## 常見面試題
 

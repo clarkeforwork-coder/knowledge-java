@@ -48,6 +48,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [@Transactional：傳播行為與常見失效情境](03-spring-to-spring-boot/transactional-propagation-and-pitfalls.md) | 🔰 | ✅ |
 | [Spring MVC 請求處理流程](03-spring-to-spring-boot/spring-mvc-request-flow.md) | 🔰 | ✅ |
 | [統一例外處理與 Validation](03-spring-to-spring-boot/exception-handling-and-validation.md) | 🔰 | ✅ |
+| [從 AOP proxy 看 @Transactional self-invocation 失效](03-spring-to-spring-boot/deep-transactional-self-invocation.md) | 🔬 | ✅ |
 
 ### 04 - 集合框架
 
@@ -100,10 +101,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 - 🔬 Java Memory Model 與 happens-before
 - 🔬 synchronized 鎖升級
-
-**03 - Spring 補深**
-
-- 🔬 從 AOP proxy 看 @Transactional self-invocation 失效
 
 ### 長期
 

@@ -28,7 +28,7 @@
 
 | 情境 | 根因 | 解法 |
 |---|---|---|
-| **self-invocation**：`this.method()` 呼叫自己的 `@Transactional` 方法 | this 是本尊不是 proxy——①| 拆到另一個 bean；或注入自己（`ObjectProvider`）；🔬 原始碼層解析見規劃中的深入篇 |
+| **self-invocation**：`this.method()` 呼叫自己的 `@Transactional` 方法 | this 是本尊不是 proxy——①| 拆到另一個 bean；或注入自己（`ObjectProvider`）；🔬 原始碼層解析見[深入篇](deep-transactional-self-invocation.md) |
 | 方法不是 **public** | proxy 只攔 public——① | 改 public（CGLIB 技術上可攔 protected，但別依賴） |
 | **checked exception** | 預設回滾名單只有 `RuntimeException` 和 `Error`——② | `rollbackFor = Exception.class` |
 | **try-catch 吞掉例外** | proxy 看不見例外——② | 別吞；要吞就自己標 rollback（見下方 rollback-only 陷阱） |
@@ -143,7 +143,7 @@ public void outerCatches() {
 
 - **失效清單全是暗雷**：每一條都編譯過、測試常常也過（測試沒走 proxy 路徑、沒驗資料）——**對策是驗收資料而不是驗收例外**（本篇每個實測都在數資料庫裡的筆數，就是這個原因）
 - **交易即連線**：`@Transactional` 方法從開始到結束佔著一條 DB 連線——**在交易裡呼叫遠端 API、發 MQ 是連線池殺手**（連線池 50 條、API 慢 2 秒，25 QPS 就把池抽乾）。交易邊界越小越好，慢操作放交易外
-- **proxy 模型的天花板**：self-invocation 這類問題不是 bug 是結構——想真正理解為什麼繞不過去，見規劃中的 🔬〈從 AOP proxy 看 @Transactional self-invocation 失效〉
+- **proxy 模型的天花板**：self-invocation 這類問題不是 bug 是結構——想真正理解為什麼繞不過去，見 🔬 [從 AOP proxy 看 @Transactional self-invocation 失效](deep-transactional-self-invocation.md)
 
 ## 小結
 
@@ -153,7 +153,7 @@ public void outerCatches() {
 - **rollback-only 陷阱**：內層炸過的共用交易，外層 catch 也救不回——`UnexpectedRollbackException` 實測為證
 - 紀律：交易邊界越小越好、慢操作（遠端呼叫）放交易外、**測交易要驗資料不是驗例外**
 
-下一站把視角拉到請求的入口：一個 HTTP request 從進到出，經過了哪些關卡才到你的 `@GetMapping`？見規劃中的〈Spring MVC 請求處理流程〉。
+下一站把視角拉到請求的入口：一個 HTTP request 從進到出，經過了哪些關卡才到你的 `@GetMapping`？見 [Spring MVC 請求處理流程](spring-mvc-request-flow.md)。
 
 ## 常見面試題
 
