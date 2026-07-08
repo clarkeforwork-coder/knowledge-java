@@ -129,7 +129,7 @@ String page = member.thenCombine(orders, (m, o) -> ...)
 - **例外會沿鏈傳染、沒人收就蒸發**（實測）：每條鏈尾端要有 `exceptionally`/`handle` 或 `join`
 - **預設池是 commonPool**（實測執行緒名為證）：IO 任務自帶 executor；等待要設 `orTimeout`
 
-thread 很貴，所以我們發明了池來省、發明了 CF 來閃避阻塞——整個 07 章都建立在這個前提上。壓軸篇要問的是：**如果這個前提消失了呢？** Java 21 的 Virtual Threads，見規劃中的〈Virtual Threads（Java 21）〉。
+thread 很貴，所以我們發明了池來省、發明了 CF 來閃避阻塞——整個 07 章都建立在這個前提上。壓軸篇要問的是：**如果這個前提消失了呢？** Java 21 的 Virtual Threads，見 [Virtual Threads（Java 21）](virtual-threads.md)。
 
 ## 常見面試題
 
