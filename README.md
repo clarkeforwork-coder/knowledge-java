@@ -47,6 +47,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [Bean 生命週期與 Scope](03-spring-to-spring-boot/bean-lifecycle-and-scope.md) | 🔰 | ✅ |
 | [@Transactional：傳播行為與常見失效情境](03-spring-to-spring-boot/transactional-propagation-and-pitfalls.md) | 🔰 | ✅ |
 | [Spring MVC 請求處理流程](03-spring-to-spring-boot/spring-mvc-request-flow.md) | 🔰 | ✅ |
+| [統一例外處理與 Validation](03-spring-to-spring-boot/exception-handling-and-validation.md) | 🔰 | ✅ |
 
 ### 04 - 集合框架
 
@@ -102,7 +103,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **03 - Spring 補深**
 
-- 🔰 統一例外處理與 Validation
 - 🔬 從 AOP proxy 看 @Transactional self-invocation 失效
 
 ### 長期

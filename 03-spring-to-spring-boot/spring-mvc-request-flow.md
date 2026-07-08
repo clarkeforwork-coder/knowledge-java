@@ -110,7 +110,7 @@ HTTP 200，回應 JSON：{"id":"A01","amount":500,"status":"CREATED"}
 - JSON ↔ 物件的變形是 **HttpMessageConverter** 的事：欄位對不上查 Jackson、415 查 Content-Type
 - `MockMvc` standalone 不起容器測整條管線——寫 web 層測試的首選姿勢
 
-流程圖上有一站還沒講：你的方法**炸了**之後，例外沿著這條管線往回走——誰接住它、怎麼變成一個像樣的錯誤回應？見規劃中的〈統一例外處理與 Validation〉。
+流程圖上有一站還沒講：你的方法**炸了**之後，例外沿著這條管線往回走——誰接住它、怎麼變成一個像樣的錯誤回應？見 [統一例外處理與 Validation](exception-handling-and-validation.md)。
 
 ## 常見面試題
 
