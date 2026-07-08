@@ -83,6 +83,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
 | [泛型基礎與型別擦除](05-generics/generics-basics-and-type-erasure.md) | 🔰 | ✅ |
+| [萬用字元與 PECS](05-generics/wildcards-and-pecs.md) | 🔰 | ✅ |
 
 ## Roadmap
 
@@ -92,7 +93,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **05 - 泛型**（`05-generics/`）
 
-- 🔰 萬用字元與 PECS
 - 🔰 泛型與陣列的地雷
 
 **07 - 並發**（`07-concurrency/`）

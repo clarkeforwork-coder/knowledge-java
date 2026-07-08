@@ -150,7 +150,7 @@ error: name clash: handle(List<Integer>) and handle(List<String>) have the same 
 - **unchecked 警告別無視**：那是「放入沒事、取出爆炸」的延遲引信
 - static 成員不隨型別參數分家——class 只有一份
 
-擦除講完，下一個問題馬上來：`List<Integer>` 能不能傳給收 `List<Number>` 的方法？（劇透：不能——泛型沒有繼承關係。）這就是萬用字元和 PECS 要解的題：見規劃中的〈萬用字元與 PECS〉。
+擦除講完，下一個問題馬上來：`List<Integer>` 能不能傳給收 `List<Number>` 的方法？（劇透：不能——泛型沒有繼承關係。）這就是萬用字元和 PECS 要解的題：見 [萬用字元與 PECS](wildcards-and-pecs.md)。
 
 ## 常見面試題
 
