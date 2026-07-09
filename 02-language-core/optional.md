@@ -97,7 +97,7 @@ of(null)       ：NullPointerException
 - 鏈式 `map` 是 null 金字塔的解藥（任一步 null 自動短路）；`of(null)` 當場炸、`ofNullable` 收容
 - 三個不要：不當欄位、不當參數、不包集合——它是**回傳值**的工具
 
-02 章語言核心還剩最後一塊拼圖：值物件的現代標準答案——見規劃中的〈record 與不可變物件〉。
+02 章語言核心還剩最後一塊拼圖：值物件的現代標準答案——見 [record 與不可變物件](record-and-immutability.md)。
 
 ## 常見面試題
 

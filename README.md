@@ -42,6 +42,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [static 與 final](02-language-core/static-and-final.md) | 🔰 | ✅ |
 | [enum 的正確姿勢](02-language-core/enum-done-right.md) | 🔰 | ✅ |
 | [Optional](02-language-core/optional.md) | 🔰 | ✅ |
+| [record 與不可變物件](02-language-core/record-and-immutability.md) | 🔰 | ✅ |
 
 ### 03 - Spring 到 Spring Boot
 
@@ -106,10 +107,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 ### 中期
 
 ### 長期
-
-**02 - 語言核心補完**
-
-- 🔰 record 與不可變物件
 
 **08 - 資料存取**（`08-data-access/`）
 
