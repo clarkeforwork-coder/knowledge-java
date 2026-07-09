@@ -151,7 +151,7 @@ Heap dump file created [54499597 bytes in 0.044 secs]
 ### 侷限
 
 - **侵入性**：`jmap -dump` 會觸發 Full GC 和明顯停頓，對正在掙扎的線上服務要三思
-- **單張快照**：jstack/jmap 都是「那一瞬間」的照片，間歇性問題可能拍不到——連拍幾張間隔比對是基本功，但要連續觀測就得靠 JFR 這類常駐工具（見規劃中的〈進階剖析：JFR 與 profiler〉）
+- **單張快照**：jstack/jmap 都是「那一瞬間」的照片，間歇性問題可能拍不到——連拍幾張間隔比對是基本功，但要連續觀測就得靠 JFR 這類常駐工具（見 🔬 [進階剖析：JFR 與 profiler](deep-jfr-profiling.md)）
 - **權限**：attach 到目標 JVM 需要同一個 OS user——容器環境還得先 `docker exec` 進去，而且 image 裡要有 JDK 而不是只有 JRE
 
 ## 小結
@@ -162,7 +162,7 @@ Heap dump file created [54499597 bytes in 0.044 secs]
 - `jmap -dump` 有 Full GC 代價，線上慎用；`-XX:+HeapDumpOnOutOfMemoryError` 是每個服務都該開的事前保險
 - thread 狀態速讀：`BLOCKED` 在等鎖、`WAITING` 在等事、`RUNNABLE` 在燒 CPU
 
-工具箱到這裡是「事故當下」的層次；想要常駐飛行記錄、拍到間歇性問題，見規劃中的〈進階剖析：JFR 與 profiler〉。
+工具箱到這裡是「事故當下」的層次；想要常駐飛行記錄、拍到間歇性問題，見 🔬 [進階剖析：JFR 與 profiler](deep-jfr-profiling.md)。
 
 ## 常見面試題
 
