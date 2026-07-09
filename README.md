@@ -38,6 +38,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [浮點數與 BigDecimal](02-language-core/floating-point-and-bigdecimal.md) | 🔰 | ✅ |
 | [String 與 StringBuilder](02-language-core/string-and-stringbuilder.md) | 🔰 | ✅ |
 | [例外處理](02-language-core/exception-handling.md) | 🔰 | ✅ |
+| [介面 vs 抽象類別](02-language-core/interface-vs-abstract-class.md) | 🔰 | ✅ |
 
 ### 03 - Spring 到 Spring Boot
 
@@ -105,7 +106,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **02 - 語言核心補完**
 
-- 🔰 介面 vs 抽象類別
 - 🔰 static 與 final
 - 🔰 enum 的正確姿勢
 - 🔰 Optional
