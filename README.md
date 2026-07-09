@@ -100,6 +100,12 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [萬用字元與 PECS](05-generics/wildcards-and-pecs.md) | 🔰 | ✅ |
 | [泛型與陣列的地雷](05-generics/generics-and-arrays.md) | 🔰 | ✅ |
 
+### 08 - 資料存取
+
+| 筆記 | 深度 | 狀態 |
+|---|---|---|
+| [JDBC 與連線池](08-data-access/jdbc-and-connection-pool.md) | 🔰 | ✅ |
+
 ## Roadmap
 
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
@@ -110,7 +116,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **08 - 資料存取**（`08-data-access/`）
 
-- 🔰 JDBC 與連線池
 - 🔰 JPA/Hibernate：lazy loading 與 N+1
 - 🔰 交易與資料庫鎖
 - 🔬 Hibernate 一級快取與 dirty checking
