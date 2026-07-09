@@ -109,6 +109,12 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [交易與資料庫鎖](08-data-access/transactions-and-database-locks.md) | 🔰 | ✅ |
 | [Hibernate 一級快取與 dirty checking](08-data-access/deep-hibernate-first-level-cache.md) | 🔬 | ✅ |
 
+### 09 - 測試與工程實務
+
+| 筆記 | 深度 | 狀態 |
+|---|---|---|
+| [JUnit 5 基礎](09-testing-and-engineering/junit5-basics.md) | 🔰 | ✅ |
+
 ## Roadmap
 
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
@@ -119,7 +125,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **09 - 測試與工程實務**（`09-testing-and-engineering/`）
 
-- 🔰 JUnit 5 基礎
 - 🔰 Mockito 與測試替身
 - 🔰 Spring Boot Test 分層測試策略
 - 🔰 重構與 Code Review 原則
