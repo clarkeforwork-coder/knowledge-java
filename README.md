@@ -34,8 +34,8 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [Autoboxing 與 Unboxing](02-language-core/autoboxing-unboxing.md) | 🔰 | ✅ |
 | [經典陷阱：迴圈裡共用同一個物件](02-language-core/pitfall-shared-reference-in-loop.md) | 🔰 | ✅ |
 | [浮點數與 BigDecimal](02-language-core/floating-point-and-bigdecimal.md) | 🔰 | ✅ |
-| [String 與 StringBuilder](02-language-core/string-and-stringbuilder.md) | 🔰 | 🔧 |
-| [例外處理](02-language-core/exception-handling.md) | 🔰 | 🔧 |
+| [String 與 StringBuilder](02-language-core/string-and-stringbuilder.md) | 🔰 | ✅ |
+| [例外處理](02-language-core/exception-handling.md) | 🔰 | ✅ |
 
 ### 03 - Spring 到 Spring Boot
 
