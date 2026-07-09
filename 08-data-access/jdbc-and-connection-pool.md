@@ -97,7 +97,7 @@ try (Connection c = pool.getConnection()) {   // 借
 - 參數：`maximumPoolSize` 個位數到 20（不是越大越好）、`connectionTimeout` 快速失敗、池上限對齊 DB `max_connections`
 - 這層是上層框架的效能天花板——ORM 遮住它，但連線耗盡的帳算在它頭上
 
-上層把這些樣板包好之後，新的問題浮現：ORM 太方便，一個 `.getOrders()` 背後可能偷偷發了 100 條 SQL——見規劃中的〈JPA/Hibernate：lazy loading 與 N+1〉。
+上層把這些樣板包好之後，新的問題浮現：ORM 太方便，一個 `.getOrders()` 背後可能偷偷發了 100 條 SQL——見 [JPA/Hibernate：lazy loading 與 N+1](jpa-lazy-loading-and-n-plus-1.md)。
 
 ## 常見面試題
 

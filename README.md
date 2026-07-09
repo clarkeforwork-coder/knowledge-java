@@ -105,6 +105,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
 | [JDBC 與連線池](08-data-access/jdbc-and-connection-pool.md) | 🔰 | ✅ |
+| [JPA/Hibernate：lazy loading 與 N+1](08-data-access/jpa-lazy-loading-and-n-plus-1.md) | 🔰 | ✅ |
 
 ## Roadmap
 
@@ -116,7 +117,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **08 - 資料存取**（`08-data-access/`）
 
-- 🔰 JPA/Hibernate：lazy loading 與 N+1
 - 🔰 交易與資料庫鎖
 - 🔬 Hibernate 一級快取與 dirty checking
 
