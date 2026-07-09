@@ -106,7 +106,7 @@ Account locked = emC.find(Account.class, 2L, LockModeType.PESSIMISTIC_WRITE);
 - **悲觀鎖**：`SELECT ... FOR UPDATE` 事前佔住，後到者阻塞——衝突頻繁/代價高才用，有死結風險
 - 預設樂觀、交易越短越好、死結靠固定取鎖順序——這是 [07 章 race condition](../07-concurrency/synchronized-and-volatile.md) 在資料庫層的對應解
 
-樂觀鎖的重試、悲觀鎖的阻塞——這些都建立在「每次都真的打到資料庫」的前提上。但 Hibernate 其實在 session 裡藏了一層快取，讓某些查詢根本不發 SQL——它怎麼運作、什麼時候幫倒忙，見規劃中的 🔬〈Hibernate 一級快取與 dirty checking〉。
+樂觀鎖的重試、悲觀鎖的阻塞——這些都建立在「每次都真的打到資料庫」的前提上。但 Hibernate 其實在 session 裡藏了一層快取，讓某些查詢根本不發 SQL——它怎麼運作、什麼時候幫倒忙，見 🔬 [Hibernate 一級快取與 dirty checking](deep-hibernate-first-level-cache.md)。
 
 ## 常見面試題
 
