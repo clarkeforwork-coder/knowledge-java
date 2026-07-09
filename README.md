@@ -25,6 +25,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [GC 基礎與分代回收](01-jvm/gc-basics-and-generations.md) | 🔰 | ✅ |
 | [事故排查工具箱：jps、jstack、jmap 與 heap dump](01-jvm/troubleshooting-toolbox.md) | 🔰 | ✅ |
 | [ClassLoader 的開放性：從 Tomcat 隔離到 Native Image 的死穴](01-jvm/deep-classloader.md) | 🔬 | ✅ |
+| [GC 演算法比較（G1、ZGC）](01-jvm/deep-gc-algorithms.md) | 🔬 | ✅ |
 
 ### 02 - Java 語言核心
 
@@ -103,7 +104,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **01 - JVM 補深**
 
-- 🔬 GC 演算法比較（G1、ZGC）
 - 🔬 進階剖析：JFR 與 profiler（承接 🔰 排查工具箱）
 
 **02 - 語言核心補完**
