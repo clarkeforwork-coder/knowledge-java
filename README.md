@@ -40,6 +40,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [例外處理](02-language-core/exception-handling.md) | 🔰 | ✅ |
 | [介面 vs 抽象類別](02-language-core/interface-vs-abstract-class.md) | 🔰 | ✅ |
 | [static 與 final](02-language-core/static-and-final.md) | 🔰 | ✅ |
+| [enum 的正確姿勢](02-language-core/enum-done-right.md) | 🔰 | ✅ |
 
 ### 03 - Spring 到 Spring Boot
 
@@ -107,7 +108,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **02 - 語言核心補完**
 
-- 🔰 enum 的正確姿勢
 - 🔰 Optional
 - 🔰 record 與不可變物件
 
