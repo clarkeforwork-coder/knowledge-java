@@ -83,6 +83,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [CompletableFuture](07-concurrency/completablefuture.md) | 🔰 | ✅ |
 | [Virtual Threads（Java 21）](07-concurrency/virtual-threads.md) | 🔰 | ✅ |
 | [Java Memory Model 與 happens-before](07-concurrency/deep-jmm-happens-before.md) | 🔬 | ✅ |
+| [synchronized 鎖升級](07-concurrency/deep-synchronized-lock-optimization.md) | 🔬 | ✅ |
 
 ### 05 - 泛型
 
@@ -97,10 +98,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
 
 ### 中期
-
-**07 - 並發**（`07-concurrency/`）
-
-- 🔬 synchronized 鎖升級
 
 ### 長期
 

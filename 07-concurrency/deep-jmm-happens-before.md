@@ -108,7 +108,7 @@ static Config get() {
 - 三個證明範例：停機旗標（無 hb ＝ 合法不可見）、順風車（volatile 捎帶普通寫入——CHM 無鎖讀的原理）、雙檢鎖（快路徑沒進鎖，只有 volatile 搆得到）
 - 實務：優先借 j.u.c. 現成的 hb；自己發布物件時才親手推；final 欄位有專屬保證
 
-「synchronized 很慢」的印象與 hb 的成本有關但不全對——JVM 對鎖做了一整套自適應優化，無競爭時幾乎免費：見規劃中的 🔬〈synchronized 鎖升級〉。
+「synchronized 很慢」的印象與 hb 的成本有關但不全對——JVM 對鎖做了一整套自適應優化，無競爭時幾乎免費：見 🔬 [synchronized 鎖升級](deep-synchronized-lock-optimization.md)。
 
 ## 常見面試題
 

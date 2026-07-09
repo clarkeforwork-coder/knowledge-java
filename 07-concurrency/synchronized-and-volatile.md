@@ -99,7 +99,7 @@ main 明明改了，那條 thread 卻永遠讀到舊值——JIT 把迴圈裡的
 
 三個補充：
 
-- synchronized 的「慢」是相對的——現代 JVM 有一整套鎖優化（偏向鎖已移除、輕量鎖、自旋），無競爭時成本很低；細節見規劃中的 🔬〈synchronized 鎖升級〉
+- synchronized 的「慢」是相對的——現代 JVM 有一整套鎖優化（偏向鎖已移除、輕量鎖、自旋），無競爭時成本很低；細節見 🔬 [synchronized 鎖升級](deep-synchronized-lock-optimization.md)
 - Atomic 的邊界：**check-then-act 的複合邏輯它救不了**——「如果餘額夠就扣款」是兩步，還是要鎖（或 `compareAndSet` 迴圈）
 - 粒度紀律：鎖的範圍越小越好（鎖住整個方法 vs 只鎖那三行），但**正確性優先於粒度**——先對，再快
 
