@@ -117,7 +117,7 @@ select distinct a from Author a join fetch a.books
 - 雙胞胎陷阱 `LazyInitializationException`：session 外碰 lazy——正解也是 session 內 fetch 齊
 - 核心：ORM 讓你不用寫 SQL，但**必須懂 SQL**——開日誌看它發了什麼
 
-資料查得對了，下一個問題是「並發改同一筆」：兩個交易同時改一張保單會怎樣？資料庫的鎖與 JPA 的樂觀／悲觀鎖——見規劃中的〈交易與資料庫鎖〉。
+資料查得對了，下一個問題是「並發改同一筆」：兩個交易同時改一張保單會怎樣？資料庫的鎖與 JPA 的樂觀／悲觀鎖——見 [交易與資料庫鎖](transactions-and-database-locks.md)。
 
 ## 常見面試題
 
