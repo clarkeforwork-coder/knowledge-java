@@ -179,7 +179,7 @@ JVM 的其他配置都在裡面，而且用 `java HeapBomb.java` 單檔執行時
 - `OutOfMemoryError` 先看冒號後面：`Java heap space` 找不死的參考（cache、static 集合）；`Metaspace` 找 class 生成來源或 ClassLoader 洩漏
 - 一句話記憶：**變數名在 Stack，物件本體在 Heap；`new` 出來的都在 Heap，指過去的參考在 Stack**
 
-Heap「由 GC 管」這句話背後是一整套學問：GC 怎麼判斷誰還活著？分代是怎麼分的？回收時為什麼會停頓？見 [GC 基礎與分代回收](gc-basics-and-generations.md)。而「所有 thread 共享 Heap」帶來的可見性問題，見規劃中的〈Java Memory Model 與 happens-before〉。
+Heap「由 GC 管」這句話背後是一整套學問：GC 怎麼判斷誰還活著？分代是怎麼分的？回收時為什麼會停頓？見 [GC 基礎與分代回收](gc-basics-and-generations.md)。而「所有 thread 共享 Heap」帶來的可見性問題，見 🔬 [Java Memory Model 與 happens-before](../07-concurrency/deep-jmm-happens-before.md)。
 
 ## 常見面試題
 

@@ -82,6 +82,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [並發集合：ConcurrentHashMap](07-concurrency/concurrent-collections.md) | 🔰 | ✅ |
 | [CompletableFuture](07-concurrency/completablefuture.md) | 🔰 | ✅ |
 | [Virtual Threads（Java 21）](07-concurrency/virtual-threads.md) | 🔰 | ✅ |
+| [Java Memory Model 與 happens-before](07-concurrency/deep-jmm-happens-before.md) | 🔬 | ✅ |
 
 ### 05 - 泛型
 
@@ -99,7 +100,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **07 - 並發**（`07-concurrency/`）
 
-- 🔬 Java Memory Model 與 happens-before
 - 🔬 synchronized 鎖升級
 
 ### 長期

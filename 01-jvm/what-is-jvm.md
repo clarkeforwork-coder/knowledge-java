@@ -226,7 +226,7 @@ JVM 不是黑盒子，它是一台由三大區塊組成的虛擬機器：
 
 你每天寫的 Java 程式碼，經過了 `javac 編譯 → Class Loading → 記憶體配置 → Interpreter 解譯 → JIT 編譯 → CPU 執行` 這一整條路。理解這條路，是理解後面所有效能問題和框架設計的前提。
 
-但 JVM 的記憶體模型還有一個更深層的問題：當多個 thread 同時讀寫共享記憶體時，你看到的值可能不是你以為的那個值——這不是 bug，而是設計，也就是 thread safety 要面對的核心。見規劃中的〈Java Memory Model 與 happens-before〉。
+但 JVM 的記憶體模型還有一個更深層的問題：當多個 thread 同時讀寫共享記憶體時，你看到的值可能不是你以為的那個值——這不是 bug，而是設計，也就是 thread safety 要面對的核心。見 🔬 [Java Memory Model 與 happens-before](../07-concurrency/deep-jmm-happens-before.md)。
 
 🔬 想深入：[ClassLoader 的開放性：從 Tomcat 隔離到 Native Image 的死穴](deep-classloader.md)
 

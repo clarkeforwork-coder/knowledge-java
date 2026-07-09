@@ -103,7 +103,7 @@ virtual thread toString：VirtualThread[#110240]/runnable@ForkJoinPool-1-worker-
 - 地雷：JDK 21 的 synchronized pinning（JEP 491 在 JDK 24 修掉）、ThreadLocal 的百萬倍放大
 - 對本章的意義：thread 貴的前提被打掉後——池的價值剩限流、CF 的價值剩組合語意、阻塞式寫法重新成為預設
 
-**07 章 🔰 軌完軌**：從 thread 的生老病死、鎖與可見性、池與編排，到把前提整個翻掉的 virtual threads。選修軌還有兩個深洞：「進出鎖等於同步記憶體」的精確理論見規劃中的 🔬〈Java Memory Model 與 happens-before〉；「synchronized 其實沒那麼慢」的原因見規劃中的 🔬〈synchronized 鎖升級〉。
+**07 章 🔰 軌完軌**：從 thread 的生老病死、鎖與可見性、池與編排，到把前提整個翻掉的 virtual threads。選修軌還有兩個深洞：「進出鎖等於同步記憶體」的精確理論見 🔬 [Java Memory Model 與 happens-before](deep-jmm-happens-before.md)；「synchronized 其實沒那麼慢」的原因見規劃中的 🔬〈synchronized 鎖升級〉。
 
 ## 常見面試題
 
