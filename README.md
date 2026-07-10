@@ -1,9 +1,24 @@
 # knowledge-java
 
-Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公開版）。
+![notes](https://img.shields.io/badge/notes-58-blue)
+![deep dives](https://img.shields.io/badge/🔬_deep_dives-8-purple)
+![examples](https://img.shields.io/badge/runnable_examples-verified-brightgreen)
+![roadmap](https://img.shields.io/badge/roadmap-complete-success)
+![Java](https://img.shields.io/badge/Java-17_&_21-orange)
+![Spring](https://img.shields.io/badge/Spring-6.x_/_Boot_3.x-6DB33F)
+
+Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公開版）。從 JVM、語言核心、集合、泛型、並發到 Spring 生態與資料存取，七個技術章＋工程實務＋版本演進，**共 58 篇筆記**。
+
+每篇不只講「怎麼用」，更把「魔法」拆成機制——每個結論、每組 benchmark、每段編譯錯誤都經過**實測**（JDK 17；並發與 Virtual Threads 篇以 Docker Temurin 21 驗證）。筆記之間以跨章連結互相印證，不是散篇而是一張網。
 
 > Part of my [portfolio](https://github.com/clarkeforwork-coder/portfolio) —
 > naming convention: `knowledge-*` = technical notes.
+
+**特色**
+
+- **雙軌制**：🔰 訓練主軌（廣而穩，可直接開課）＋ 🔬 深入選修軌（8 篇原始碼／機制／效能剖析）
+- **全程實測**：`javap` 看 bytecode、JOL 看物件頭、Hibernate `Statistics` 數 SQL、四種 GC 同場 benchmark——不憑印象
+- **跨章敘事線**：不可變設計、proxy 機制、race condition 等主題貫穿多章，前後呼應
 
 **範圍**：專注在 Java 語言與 Spring 生態。微服務、快取、訊息佇列等後端架構主題不在此 repo，未來以其他 `knowledge-*` repo 承接。
 
