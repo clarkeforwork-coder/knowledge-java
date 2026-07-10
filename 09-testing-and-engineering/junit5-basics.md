@@ -118,7 +118,7 @@ Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
 - **參數化**一個邏輯測多組資料（實測 4 組邊界值），每組獨立計數
 - 紀律：一測一行為、靠 `@BeforeEach` 隔離、測業務不測框架
 
-有了測試框架，下一個問題馬上來：被測的類別依賴了資料庫、遠端 API、其他 service——**測一個 service 難道要連真的 DB 嗎**？把依賴換成可控的替身，見規劃中的〈Mockito 與測試替身〉。
+有了測試框架，下一個問題馬上來：被測的類別依賴了資料庫、遠端 API、其他 service——**測一個 service 難道要連真的 DB 嗎**？把依賴換成可控的替身，見 [Mockito 與測試替身](mockito-and-test-doubles.md)。
 
 ## 常見面試題
 
