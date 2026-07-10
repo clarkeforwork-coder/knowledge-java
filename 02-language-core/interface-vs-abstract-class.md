@@ -86,6 +86,67 @@ abstract class ReportJob {
 
 三個 interface 做不到的點全在這段裡：`processed` 欄位（狀態）、`final run()`（流程不許子類亂改——interface 的 default 不能 final）、`protected` 缺口（interface 的方法藏不住）。這就是 abstract class 在 default method 時代依然活著的理由。
 
+## 繼承的代價：能組合就別繼承
+
+前面把 abstract class 的模板方法講得很正面——但那是**繼承的少數正當場景**。在跳進繼承之前，得先知道它為什麼危險。OOP 最重要的設計準則之一：**組合優於繼承（favor composition over inheritance）**。
+
+### 為什麼繼承危險：它破壞封裝
+
+繼承讓子類依賴父類的**實作細節**，不只是介面。經典的翻車現場——想給 HashSet 加一個「累計加入過幾個元素」的計數器：
+
+```java
+class CountingSet<E> extends HashSet<E> {
+    int addCount = 0;
+    @Override public boolean add(E e) { addCount++; return super.add(e); }
+    @Override public boolean addAll(Collection<? extends E> c) {
+        addCount += c.size();              // 看起來合理：加了 c.size() 個
+        return super.addAll(c);
+    }
+}
+```
+
+實測（加 3 個元素）：
+
+```
+繼承版：加了 3 個，addCount = 6（期望 3）
+```
+
+**翻倍了。** 原因藏在 HashSet 的**內部實作**：`HashSet.addAll()` 內部是**逐一呼叫 `add()`** 的。於是 `addAll(3 個)` 先 `addCount += 3`，再呼叫 `super.addAll()`，後者又觸發 3 次被你覆寫的 `add()`——每次再 `addCount++`。**3 + 3 = 6**。
+
+致命的是：這個 bug 取決於「HashSet 的 addAll 內部有沒有呼叫 add」——這是**父類的實作細節、沒寫在任何契約裡**。哪天 JDK 改了 HashSet 的內部實作，你的子類就會用另一種方式壞掉。這叫 **fragile base class problem（脆弱基礎類別）**：**父類的實作是子類的隱形依賴，父類一改，子類無聲崩壞**。
+
+### 組合：把「是一個」換成「有一個」
+
+同樣的需求，用組合——**包一個 HashSet，只轉發你要的方法**：
+
+```java
+class CountingSet<E> {
+    private final Set<E> set = new HashSet<>();   // 有一個 Set（has-a），不是「是一個」Set
+    int addCount = 0;
+    public boolean add(E e) { addCount++; return set.add(e); }
+    public boolean addAll(Collection<? extends E> c) {
+        addCount += c.size();
+        return set.addAll(c);                     // 轉發——set 內部怎麼實作，與我無關
+    }
+}
+```
+
+實測：
+
+```
+組合版：加了 3 個，addCount = 3（期望 3）
+```
+
+正確。差別的本質：組合只依賴 HashSet 的**公開契約**（`add`/`addAll` 做什麼），**不管它內部怎麼做**——`set.addAll` 內部呼不呼叫 `set.add` 都影響不到你的計數器，因為那個 `add` 不是你覆寫的版本。封裝沒被打破。
+
+### 判準：真的是 is-a 才繼承
+
+- **繼承問「是不是」**：`CountingSet` 真的**是一個** HashSet 嗎？——不是，它只是**想用** HashSet 的功能。這種「想重用」偽裝成「is-a」的，正是繼承誤用的重災區
+- **只有真正的 is-a、且父類為繼承而設計**（有文件說明可覆寫哪些方法、`protected` 缺口明確——就是模板方法那種）才用繼承
+- 其餘一律組合——[Set/Map 篇](../04-collections/collections-overview.md)的裝飾器、[03 章的 proxy](../03-spring-to-spring-boot/deep-transactional-self-invocation.md)（Spring 用組合包裝你的 bean）、[record 的搭配](record-and-immutability.md)都是組合
+
+這也回頭解釋了 abstract class 的定位：模板方法之所以是繼承的**正當**場景，正因為它是「**為繼承而設計**」的——父類用 `final` 鎖死流程、`protected` 明確標出可覆寫的缺口，子類不會誤踩實作細節。**沒有這樣設計的類別，別繼承它**。
+
 ## 技術優缺點
 
 ### interface 的強項與邊界
@@ -106,13 +167,15 @@ abstract class ReportJob {
 - default method 的出身是**介面演進**（stream/forEach 塞進老介面）——別拿它當抽象類別寫
 - **diamond 衝突不猜**：撞名直接編譯錯誤（實測），`X.super.m()` 顯式指名
 - abstract class 的不可替代三件套：**實例狀態、final 模板方法、protected 缺口**（實測）
-- 準則：能力 → interface；骨架 → abstract class；大型 API → 雙層搭檔（List＋AbstractList）
+- **組合優於繼承**：繼承破壞封裝、依賴父類實作細節（實測 CountingSet 計數翻倍 6≠3）——只有真正 is-a 且父類「為繼承而設計」才繼承，其餘用組合
+- 準則：能力 → interface；骨架 → abstract class（為繼承而設計）；重用 → 組合；大型 API → 雙層搭檔（List＋AbstractList）
 
 ## 常見面試題
 
 1. Java 8 之後介面能有實作了，抽象類別還有什麼存在價值？（提示：狀態、final 流程、protected——模板方法實測）
-2. 兩個介面的 default method 撞名會怎樣？（提示：編譯錯誤原文、X.super 語法）
-3. default method 當初為什麼被加進 Java？（提示：介面演進；stream 塞進 Collection 的難題）
+2. 為什麼說「組合優於繼承」？舉例。（提示：破壞封裝、fragile base class；CountingSet 計數翻倍實測）
+3. 兩個介面的 default method 撞名會怎樣？（提示：編譯錯誤原文、X.super 語法）
+4. default method 當初為什麼被加進 Java？（提示：介面演進；stream 塞進 Collection 的難題）
 
 ## 延伸閱讀
 
