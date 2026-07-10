@@ -118,17 +118,17 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 | [Spring Boot Test：分層測試策略](09-testing-and-engineering/spring-boot-test-layers.md) | 🔰 | ✅ |
 | [重構與 Code Review 原則](09-testing-and-engineering/refactoring-and-code-review.md) | 🔰 | ✅ |
 
+### 10 - Java 版本演進
+
+| 筆記 | 深度 | 狀態 |
+|---|---|---|
+| [Java 版本演進：8 → 11 → 17 → 21](10-java-versions/java-version-evolution.md) | 🔰 | ✅ |
+
 ## Roadmap
 
-各章先完成 🔰 軌；🔬 軌只挑最有價值的主題寫。章節資料夾於第一篇筆記落地時建立。
+七個技術章 ＋ 工程實務 ＋ 版本演進，🔰 訓練主軌與 🔬 深入選修軌**全部完成**。每篇皆符合 [TEMPLATE.md](TEMPLATE.md) 的五段結構、程式碼輸出與 benchmark 皆經實測（JDK 17，並發/VT 篇以 Docker Temurin 21 驗證）。
 
-### 中期
-
-### 長期
-
-**10 - Java 版本演進**（`10-java-versions/`，可選）
-
-- 🔰 8 → 11 → 17 → 21 關鍵變化總覽
+後續擴充方向（視需求開新 repo，維持本 repo 專注在 Java 語言與 Spring 生態）：微服務、快取（Redis）、訊息佇列、可觀測性等架構主題，以其他 `knowledge-*` repo 承接。
 
 ## 慣例
 
