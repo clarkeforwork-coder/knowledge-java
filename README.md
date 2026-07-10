@@ -115,6 +115,7 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 |---|---|---|
 | [JUnit 5 基礎](09-testing-and-engineering/junit5-basics.md) | 🔰 | ✅ |
 | [Mockito 與測試替身](09-testing-and-engineering/mockito-and-test-doubles.md) | 🔰 | ✅ |
+| [Spring Boot Test：分層測試策略](09-testing-and-engineering/spring-boot-test-layers.md) | 🔰 | ✅ |
 
 ## Roadmap
 
@@ -126,7 +127,6 @@ Java 技術筆記，整理自我準備的 Java 教育訓練教材（通用化公
 
 **09 - 測試與工程實務**（`09-testing-and-engineering/`）
 
-- 🔰 Spring Boot Test 分層測試策略
 - 🔰 重構與 Code Review 原則
 
 **10 - Java 版本演進**（`10-java-versions/`，可選）

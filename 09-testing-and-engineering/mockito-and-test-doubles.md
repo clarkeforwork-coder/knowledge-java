@@ -123,7 +123,7 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 - **`verify(never())` 驗「壞事沒發生」**（實測：查無保單時不存檔、不通知）——替身獨有能力
 - 別過度 mock：驗行為不驗實作、stub 太多是設計在報警、不 mock 值物件與第三方
 
-單元測試把依賴全 mock 掉了——但「service 和真 repository 接起來對不對」「Controller 的 JSON 轉換對不對」這些**接縫**，mock 測不到。什麼時候該用真的、用到哪一層，見規劃中的〈Spring Boot Test：分層測試策略〉。
+單元測試把依賴全 mock 掉了——但「service 和真 repository 接起來對不對」「Controller 的 JSON 轉換對不對」這些**接縫**，mock 測不到。什麼時候該用真的、用到哪一層，見 [Spring Boot Test：分層測試策略](spring-boot-test-layers.md)。
 
 ## 常見面試題
 
