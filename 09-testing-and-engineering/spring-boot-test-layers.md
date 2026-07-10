@@ -110,7 +110,7 @@ class GreetControllerTest {
 - `@SpringBootTest` 完整啟動、最真最慢——留給關鍵端到端，別濫用
 - 切片對 **classpath 衝突敏感**（實測 slf4j 坑）——啟動部分 context 就會撞到
 
-測試工具備齊了——但工具不保證品質。什麼樣的程式碼值得信任、review 該看什麼、壞味道怎麼認，見規劃中的〈重構與 Code Review 原則〉。
+測試工具備齊了——但工具不保證品質。什麼樣的程式碼值得信任、review 該看什麼、壞味道怎麼認，見 [重構與 Code Review 原則](refactoring-and-code-review.md)。
 
 ## 常見面試題
 
